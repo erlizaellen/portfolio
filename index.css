@@ -1,64 +1,117 @@
-    body {
-        background-color: #b391c3;
-        color: #f9f7f1;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-    }
+/* Importando fonte elegante */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #eac1e5; /* Fundo suave */
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #ad85c6;
+    border-bottom: 3px solid #5D3FD3;
+}
+
+nav a img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #5D3FD3;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5D3FD3;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #FFD700;
+    color: #333;
+}
+
+/* Seção principal */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 50px;
+    gap: 40px;
+}
+
+.perfil {
+    width: 600px;
+    border-radius: 10px;
+    border: 3px solid #5D3FD3;
+
+}
+
+.info {
+    text-align: left;
+   
+    margin-left: 120px;
+   
+}
+
+.info h1 {
+     
+    font-size: 100px;
+    font-family: 'Pacifico', cursive;
+    color: #5D3FD3;
+    text-align: center;
+    text-shadow: 
+    -2px -2px 0 #FFD700,  
+    2px -2px 0 #FFD700,  
+    -2px 2px 0 #FFD700,  
+    2px 2px 0 #FFD700; /* Contorno dourado */
+}
     
-    ul {
-        display: flex;
-        justify-content: space-between;
-        list-style-type: none;
-        align-items: center;
-        padding: 15px;
-    }
-    
-    a {
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-    }
-    
-    header img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        border: 5px solid #ffe357;
-    }
-    
-    .center {
-        text-align: center;
-    }
-    
-    h1 {
-        color: rgb(248, 252, 32)
-    }
-    
-    footer img {
-        width: 100;
-        height: 40px;
-    }
-    
-    footer {
-        display: flex;
-        justify-self: center;
-    }
-    
-    footer a {
-        margin: 30px;
-        text-align: center;
-    }
-    
-    footer p {
-        margin: 8px;
-    }
-    
-    .container {
-        padding: 0px 50px;
-    }
-    
-    nav a:hover {
-        color: yellow
-    }
-    
-    h3 {
-        color: #ffe357
-    }
+
+.info h2 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Cartões de seções */
+.card {
+    background: rgb(224, 165, 224);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Ajustando imagens dentro de seções */
+section img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #5D3FD3;
+}
